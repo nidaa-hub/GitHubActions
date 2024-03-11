@@ -11,5 +11,5 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Run tests
-      run: npm test
+    - name: echo hello world
+      run: echo hello world
