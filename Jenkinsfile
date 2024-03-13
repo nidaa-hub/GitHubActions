@@ -1,10 +1,19 @@
 pipeline {
     agent any
-
     stages {
-        stage('Checkout') {
+        stage('Build') {
             steps {
-                git 'https://github.com/nidaa-hub/GitHubActions.git'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying..'
             }
         }
     }
